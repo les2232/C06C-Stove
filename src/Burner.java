@@ -24,14 +24,39 @@ public class Burner {
 
 
 	public void plusButton() {
-		// TODO Auto-generated method stub
-		
+				switch (mySetting) {
+		case OFF:
+			mySetting = Setting.LOW;
+			break;
+		case LOW:
+			mySetting = Setting.MEDIUM;
+			break;
+		case MEDIUM:
+			mySetting = Setting.HIGH;
+			break;
+		case HIGH:
+			//do nothing;
+			break;
+		}
+		timer = TIME_DURATION;	
 	}
 
 	public void minusButton() {
-		// TODO Auto-generated method stub
-		
-	}
+		switch (mySetting) {
+		case HIGH:
+			mySetting = Setting.MEDIUM;
+			break;
+		case MEDIUM:
+			mySetting = Setting.LOW;
+			break;
+		case LOW:
+			mySetting = Setting.OFF;
+			break;
+		case OFF:
+			//do nothing;
+			break;
+		}
+		timer = TIME_DURATION;
 
 	public void updateTemperature() {
 		// TODO Auto-generated method stub
