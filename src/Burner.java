@@ -16,6 +16,12 @@ public class Burner {
 		mySetting = Setting.OFF;
 		timer = 0; 
 	}
+	
+
+	public Temperature getMyTemperature() {
+		return myTemperature;
+	}
+
 
 	public void plusButton() {
 		// TODO Auto-generated method stub
