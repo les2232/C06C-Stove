@@ -129,10 +129,10 @@ public class Burner {
 	}
 	
 	public void display() {
-		System.out.print(mySetting + ".....");
+		System.out.print("[" + mySetting + "].....");
 		switch (myTemperature) {
 		case BLAZING:
-			System.out.println("VERY HOT! DON'T TOUCH!");
+			System.out.println("VERY HOT! DON'T TOUCH");
 			break;
 		case HOT:
 			System.out.println("CAREFUL");
