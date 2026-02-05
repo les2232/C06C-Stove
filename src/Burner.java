@@ -127,7 +127,21 @@ public class Burner {
 	}
 	
 	public void display() {
-		
+		System.out.print(mySetting + ".....");
+		switch (myTemperature) {
+		case BLAZING:
+			System.out.println("VERY HOT! DON'T TOUCH!");
+			break;
+		case HOT:
+			System.out.println("CAREFUL");
+			break;
+		case WARM:
+			System.out.println("warm");
+			break;
+		case COLD:
+			System.out.println("cooool");
+			break;
+		}
 	}
 
 }
