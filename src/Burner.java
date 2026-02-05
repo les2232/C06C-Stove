@@ -107,6 +107,7 @@ public class Burner {
 						myTemperature = Temperature.WARM;
 						break;
 					}
+				timer = TIME_DURATION;
 				} else if(tempGoal < tempReal) {
 					switch (myTemperature) {
 					case BLAZING:
@@ -121,6 +122,7 @@ public class Burner {
 					case COLD:
 						break;
 					}
+					timer = TIME_DURATION;
 				}
 			}
 		}
