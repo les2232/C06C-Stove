@@ -1,6 +1,6 @@
 
 public class Burner {
-	
+	//testing
 	public enum Temperature {
 		COLD, WARM, HOT, BLAZING
 	}
